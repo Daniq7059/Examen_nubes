@@ -34,16 +34,9 @@
                     <td>{{ registro[4] }}</td>
                     <td>{{ registro[5] }}</td>
                     <td>
-                        <!-- Botón para editar -->
-                        <a href="/editar/{{ registro[1] }}" class="editar-link">Editar</a>
-
-                        <!-- Botón para eliminar -->
                         <form action="/eliminar/{{ registro[1] }}" method="post" style="display:inline;">
                             <button type="submit" onclick="return confirm('¿Estás seguro de eliminar este registro?');">Eliminar</button>
                         </form>
-
-                        <!-- Botón para regresar al índice -->
-                        <a href="/index" class="regresar-link">Regresar al Índice</a>
                     </td>
                 </tr>
                 {% endfor %}
